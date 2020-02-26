@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>One</name>
+  <description />
+  <settings>
+    <parameters>
+      <param name="pas777" value="credentialsJSON:ef565674-b09a-4af7-9418-c3df7f6c44b7" spec="password" />
+      <param name="pas888" value="credentialsJSON:8583dd7a-9e7e-4809-9199-008de3612a79" spec="password" />
+      <param name="pas999" value="credentialsJSON:ab09bcd1-f10e-46e2-be99-9768ca41d982" spec="password" />
+      <param name="pass1" value="credentialsJSON:4b7f2800-1421-459e-9999-512194609621" spec="password" />
+    </parameters>
+    <build-runners />
+    <vcs-settings>
+      <vcs-entry-ref root-id="Token9_HttpsGithubComInnayanToken1refsHeadsMaster" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="TRIGGER_1" type="vcsTrigger">
+        <parameters>
+          <param name="branchFilter" value="+:*" />
+          <param name="enableQueueOptimization" value="true" />
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <cleanup />
+  </settings>
+</build-type>
+
